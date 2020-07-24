@@ -79,8 +79,8 @@ class BottomBar extends StatelessWidget {
               ),
             ),
             onTap: () {
-               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (BuildContext context) => PaymentPage()));
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (BuildContext context) => PaymentPage()));
             },
           ),
         ],
@@ -452,9 +452,9 @@ class _DragTargetWidgetState extends State<DragTargetWidget> {
         colorBloc.setColor(Colors.red);
         return true;
       },
-      onLeave: (FoodItem foodItem) {
-        colorBloc.setColor(Colors.white);
-      },
+      //onLeave: (FoodItem foodItem) {
+      //  colorBloc.setColor(Colors.white);
+      //},
       builder: (BuildContext context, List incoming, List rejected) {
         return Padding(
           padding: const EdgeInsets.all(5.0),
